@@ -1,0 +1,33 @@
+{
+  "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+  "alerts": [
+    {
+      "alert_id": "ALERT-0002",
+      "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+      "type": "conveyor_jam",
+      "severity": "critical",
+      "active": true,
+      "message": "Conveyor stopped for 3 s with parcels waiting",
+      "triggered_at": "2026-11-20T10:00:12Z",
+      "resolved_at": null,
+      "target": {
+        "type": "conveyor",
+        "id": "CONVEYOR_01"
+      }
+    },
+    {
+      "alert_id": "ALERT-0001",
+      "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+      "type": "barcode_failure",
+      "severity": "warning",
+      "active": true,
+      "message": "Scan failed for P002",
+      "triggered_at": "2026-11-20T10:00:05Z",
+      "resolved_at": null,
+      "target": {
+        "type": "parcel",
+        "id": "P002"
+      }
+    }
+  ]
+}

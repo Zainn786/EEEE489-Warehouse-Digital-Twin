@@ -1,0 +1,449 @@
+{
+  "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+  "nodes": [
+    {
+      "id": "Sensor:SENSOR_BARCODE",
+      "type": "Sensor",
+      "label": "SENSOR_BARCODE",
+      "properties": {
+        "sensor_id": "SENSOR_BARCODE",
+        "name": "SENSOR_BARCODE",
+        "sensor_type": "barcode"
+      }
+    },
+    {
+      "id": "Sensor:SENSOR_BAY_A",
+      "type": "Sensor",
+      "label": "SENSOR_BAY_A",
+      "properties": {
+        "sensor_id": "SENSOR_BAY_A",
+        "name": "SENSOR_BAY_A",
+        "latest_value": 1,
+        "sensor_type": "bay_occupancy",
+        "timestamp": "2026-11-20T10:00:06Z"
+      }
+    },
+    {
+      "id": "Warehouse:WH_01",
+      "type": "Warehouse",
+      "label": "Group 6 Fulfillment Sorting Area",
+      "properties": {
+        "last_updated": "2026-11-20T10:00:00Z",
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "run_started_at": "2026-11-20T10:00:00Z",
+        "kpi_bay_occupancy_A": 20.0,
+        "kpi_routing_accuracy": 100.0,
+        "simulator_status": "running",
+        "run_ids": [
+          "b6a54c23-e18d-45a1-a5bd-98e60c61f102"
+        ],
+        "kpi_calculated_at": "2026-11-20T10:00:12Z",
+        "kpi_bay_occupancy_C": 0.0,
+        "kpi_bay_occupancy_B": 0.0,
+        "kpi_rejection_rate": 50.0,
+        "kpi_throughput": 1,
+        "name": "Group 6 Fulfillment Sorting Area",
+        "kpi_average_sorting_time": 6.0,
+        "warehouse_id": "WH_01",
+        "status": "operational"
+      }
+    },
+    {
+      "id": "Conveyor:CONVEYOR_01",
+      "type": "Conveyor",
+      "label": "CONVEYOR_01",
+      "properties": {
+        "running": true,
+        "last_updated": "2026-11-20T10:00:09Z",
+        "conveyor_id": "CONVEYOR_01",
+        "stopped_since": "2026-11-20T10:00:09Z",
+        "speed_mps": 0.0,
+        "jammed_since": "2026-11-20T10:00:09Z",
+        "name": "CONVEYOR_01",
+        "jammed": true,
+        "status": "jammed"
+      }
+    },
+    {
+      "id": "Scanner:SCANNER_01",
+      "type": "Scanner",
+      "label": "SCANNER_01",
+      "properties": {
+        "scanner_id": "SCANNER_01",
+        "failed_scans": 1,
+        "name": "SCANNER_01",
+        "successful_scans": 2,
+        "status": "operational"
+      }
+    },
+    {
+      "id": "Sorter:SORTER_01",
+      "type": "Sorter",
+      "label": "SORTER_01",
+      "properties": {
+        "active_route": "REJECT_LANE",
+        "sorter_id": "SORTER_01",
+        "name": "SORTER_01",
+        "status": "operational"
+      }
+    },
+    {
+      "id": "RejectLane:REJECT_LANE_01",
+      "type": "RejectLane",
+      "label": "REJECT_LANE_01",
+      "properties": {
+        "name": "Reject Lane",
+        "lane_id": "REJECT_LANE_01",
+        "rejected_count": 1
+      }
+    },
+    {
+      "id": "DispatchBay:A",
+      "type": "DispatchBay",
+      "label": "Bay A",
+      "properties": {
+        "last_updated": "2026-11-20T10:00:06Z",
+        "occupancy": 1,
+        "name": "Bay A",
+        "bay_id": "A",
+        "status": "available",
+        "capacity": 5
+      }
+    },
+    {
+      "id": "DispatchBay:B",
+      "type": "DispatchBay",
+      "label": "Bay B",
+      "properties": {
+        "occupancy": 0,
+        "name": "Bay B",
+        "bay_id": "B",
+        "status": "available",
+        "capacity": 5
+      }
+    },
+    {
+      "id": "DispatchBay:C",
+      "type": "DispatchBay",
+      "label": "Bay C",
+      "properties": {
+        "occupancy": 0,
+        "name": "Bay C",
+        "bay_id": "C",
+        "status": "available",
+        "capacity": 5
+      }
+    },
+    {
+      "id": "Sensor:SENSOR_CONVEYOR_SPEED",
+      "type": "Sensor",
+      "label": "SENSOR_CONVEYOR_SPEED",
+      "properties": {
+        "sensor_id": "SENSOR_CONVEYOR_SPEED",
+        "name": "SENSOR_CONVEYOR_SPEED",
+        "latest_value": 0.0,
+        "sensor_type": "conveyor_speed",
+        "timestamp": "2026-11-20T10:00:09Z"
+      }
+    },
+    {
+      "id": "Sensor:SENSOR_PARCEL_PRESENCE",
+      "type": "Sensor",
+      "label": "SENSOR_PARCEL_PRESENCE",
+      "properties": {
+        "sensor_id": "SENSOR_PARCEL_PRESENCE",
+        "name": "SENSOR_PARCEL_PRESENCE",
+        "latest_value": "P004@ENTRY",
+        "sensor_type": "parcel_presence",
+        "timestamp": "2026-11-20T10:00:09Z"
+      }
+    },
+    {
+      "id": "Sensor:SENSOR_BAY_B",
+      "type": "Sensor",
+      "label": "SENSOR_BAY_B",
+      "properties": {
+        "sensor_id": "SENSOR_BAY_B",
+        "name": "SENSOR_BAY_B",
+        "sensor_type": "bay_occupancy"
+      }
+    },
+    {
+      "id": "Sensor:SENSOR_BAY_C",
+      "type": "Sensor",
+      "label": "SENSOR_BAY_C",
+      "properties": {
+        "sensor_id": "SENSOR_BAY_C",
+        "name": "SENSOR_BAY_C",
+        "sensor_type": "bay_occupancy"
+      }
+    },
+    {
+      "id": "Parcel:P001",
+      "type": "Parcel",
+      "label": "P001",
+      "properties": {
+        "sorted_at": "2026-11-20T10:00:06Z",
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "scanned_at": "2026-11-20T10:00:02Z",
+        "target_bay": "A",
+        "created_at": "2026-11-20T10:00:00Z",
+        "parcel_id": "P001",
+        "correctly_routed": true,
+        "completed_at": "2026-11-20T10:00:06Z",
+        "at_sorter_at": "2026-11-20T10:00:04Z",
+        "updated_at": "2026-11-20T10:00:06Z",
+        "name": "P001",
+        "scan_ok": true,
+        "actual_bay": "A",
+        "current_stage": "BAY_A",
+        "status": "sorted"
+      }
+    },
+    {
+      "id": "Parcel:P002",
+      "type": "Parcel",
+      "label": "P002",
+      "properties": {
+        "rejected_at": "2026-11-20T10:00:09Z",
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "scanned_at": "2026-11-20T10:00:05Z",
+        "target_bay": "C",
+        "created_at": "2026-11-20T10:00:03Z",
+        "reject_reason": "scan_failed",
+        "parcel_id": "P002",
+        "completed_at": "2026-11-20T10:00:09Z",
+        "at_sorter_at": "2026-11-20T10:00:07Z",
+        "updated_at": "2026-11-20T10:00:09Z",
+        "name": "P002",
+        "scan_ok": false,
+        "current_stage": "REJECT_LANE",
+        "status": "rejected"
+      }
+    },
+    {
+      "id": "Parcel:P003",
+      "type": "Parcel",
+      "label": "P003",
+      "properties": {
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "updated_at": "2026-11-20T10:00:08Z",
+        "scanned_at": "2026-11-20T10:00:08Z",
+        "name": "P003",
+        "scan_ok": true,
+        "target_bay": "B",
+        "created_at": "2026-11-20T10:00:06Z",
+        "current_stage": "SCANNER",
+        "parcel_id": "P003",
+        "status": "scanned"
+      }
+    },
+    {
+      "id": "Parcel:P004",
+      "type": "Parcel",
+      "label": "P004",
+      "properties": {
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "updated_at": "2026-11-20T10:00:09Z",
+        "name": "P004",
+        "target_bay": "A",
+        "created_at": "2026-11-20T10:00:09Z",
+        "parcel_id": "P004",
+        "current_stage": "ENTRY",
+        "status": "created"
+      }
+    },
+    {
+      "id": "Alert:ALERT-0001",
+      "type": "Alert",
+      "label": "barcode_failure",
+      "properties": {
+        "severity": "warning",
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "alert_id": "ALERT-0001",
+        "name": "barcode_failure",
+        "triggered_at": "2026-11-20T10:00:05Z",
+        "active": true,
+        "message": "Scan failed for P002",
+        "type": "barcode_failure"
+      }
+    },
+    {
+      "id": "Alert:ALERT-0002",
+      "type": "Alert",
+      "label": "conveyor_jam",
+      "properties": {
+        "severity": "critical",
+        "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+        "alert_id": "ALERT-0002",
+        "name": "conveyor_jam",
+        "triggered_at": "2026-11-20T10:00:12Z",
+        "active": true,
+        "message": "Conveyor stopped for 3 s with parcels waiting",
+        "type": "conveyor_jam"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "Warehouse:WH_01",
+      "target": "Scanner:SCANNER_01",
+      "type": "HAS_SCANNER"
+    },
+    {
+      "source": "Warehouse:WH_01",
+      "target": "Sorter:SORTER_01",
+      "type": "HAS_SORTER"
+    },
+    {
+      "source": "Warehouse:WH_01",
+      "target": "RejectLane:REJECT_LANE_01",
+      "type": "HAS_REJECT_LANE"
+    },
+    {
+      "source": "Conveyor:CONVEYOR_01",
+      "target": "Scanner:SCANNER_01",
+      "type": "FEEDS"
+    },
+    {
+      "source": "Scanner:SCANNER_01",
+      "target": "Sorter:SORTER_01",
+      "type": "FEEDS"
+    },
+    {
+      "source": "Sorter:SORTER_01",
+      "target": "RejectLane:REJECT_LANE_01",
+      "type": "ROUTES_TO"
+    },
+    {
+      "source": "Warehouse:WH_01",
+      "target": "DispatchBay:A",
+      "type": "HAS_BAY"
+    },
+    {
+      "source": "Sorter:SORTER_01",
+      "target": "DispatchBay:A",
+      "type": "ROUTES_TO"
+    },
+    {
+      "source": "Warehouse:WH_01",
+      "target": "DispatchBay:B",
+      "type": "HAS_BAY"
+    },
+    {
+      "source": "Sorter:SORTER_01",
+      "target": "DispatchBay:B",
+      "type": "ROUTES_TO"
+    },
+    {
+      "source": "Warehouse:WH_01",
+      "target": "DispatchBay:C",
+      "type": "HAS_BAY"
+    },
+    {
+      "source": "Sorter:SORTER_01",
+      "target": "DispatchBay:C",
+      "type": "ROUTES_TO"
+    },
+    {
+      "source": "Conveyor:CONVEYOR_01",
+      "target": "Sensor:SENSOR_CONVEYOR_SPEED",
+      "type": "MONITORED_BY"
+    },
+    {
+      "source": "Conveyor:CONVEYOR_01",
+      "target": "Sensor:SENSOR_PARCEL_PRESENCE",
+      "type": "MONITORED_BY"
+    },
+    {
+      "source": "Scanner:SCANNER_01",
+      "target": "Sensor:SENSOR_BARCODE",
+      "type": "MONITORED_BY"
+    },
+    {
+      "source": "DispatchBay:A",
+      "target": "Sensor:SENSOR_BAY_A",
+      "type": "MONITORED_BY"
+    },
+    {
+      "source": "DispatchBay:B",
+      "target": "Sensor:SENSOR_BAY_B",
+      "type": "MONITORED_BY"
+    },
+    {
+      "source": "DispatchBay:C",
+      "target": "Sensor:SENSOR_BAY_C",
+      "type": "MONITORED_BY"
+    },
+    {
+      "source": "Parcel:P001",
+      "target": "DispatchBay:A",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "Warehouse:WH_01",
+      "target": "Conveyor:CONVEYOR_01",
+      "type": "HAS_CONVEYOR"
+    },
+    {
+      "source": "Scanner:SCANNER_01",
+      "target": "Parcel:P001",
+      "type": "SCANS"
+    },
+    {
+      "source": "Parcel:P002",
+      "target": "DispatchBay:C",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "Scanner:SCANNER_01",
+      "target": "Parcel:P002",
+      "type": "SCANS"
+    },
+    {
+      "source": "Parcel:P001",
+      "target": "DispatchBay:A",
+      "type": "CURRENTLY_AT"
+    },
+    {
+      "source": "Parcel:P003",
+      "target": "DispatchBay:B",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "Parcel:P002",
+      "target": "RejectLane:REJECT_LANE_01",
+      "type": "CURRENTLY_AT"
+    },
+    {
+      "source": "Parcel:P003",
+      "target": "Scanner:SCANNER_01",
+      "type": "CURRENTLY_AT"
+    },
+    {
+      "source": "Scanner:SCANNER_01",
+      "target": "Parcel:P003",
+      "type": "SCANS"
+    },
+    {
+      "source": "Parcel:P004",
+      "target": "DispatchBay:A",
+      "type": "ASSIGNED_TO"
+    },
+    {
+      "source": "Parcel:P004",
+      "target": "Conveyor:CONVEYOR_01",
+      "type": "CURRENTLY_AT"
+    },
+    {
+      "source": "Alert:ALERT-0001",
+      "target": "Parcel:P002",
+      "type": "TRIGGERED_BY"
+    },
+    {
+      "source": "Alert:ALERT-0002",
+      "target": "Conveyor:CONVEYOR_01",
+      "type": "TRIGGERED_BY"
+    }
+  ]
+}

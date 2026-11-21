@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-9.2.0, pluggy-1.7.0 -- /Users/zain/Downloads/EEEE489-Warehouse-Digital-Twin/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/zain/Downloads/EEEE489-Warehouse-Digital-Twin
+collecting ... collected 20 items
+
+tests/graph/test_graph.py::test_init_is_idempotent_and_creates_ontology PASSED [  5%]
+tests/graph/test_graph.py::test_parcel_lifecycle_updates_properties_and_relationships PASSED [ 10%]
+tests/graph/test_graph.py::test_dispatch_removes_location_keeps_sorted_history PASSED [ 15%]
+tests/graph/test_graph.py::test_three_active_parcels_have_one_location_each PASSED [ 20%]
+tests/graph/test_graph.py::test_duplicate_event_is_ignored PASSED        [ 25%]
+tests/graph/test_graph.py::test_stale_event_does_not_move_parcel_backwards PASSED [ 30%]
+tests/graph/test_graph.py::test_parcel_never_both_sorted_and_rejected PASSED [ 35%]
+tests/graph/test_graph.py::test_invalid_event_raises_and_writes_nothing PASSED [ 40%]
+tests/graph/test_graph.py::test_barcode_failure_routes_to_reject_lane PASSED [ 45%]
+tests/graph/test_graph.py::test_conveyor_jam_and_recovery PASSED         [ 50%]
+tests/graph/test_graph.py::test_bay_occupancy_and_full_status PASSED     [ 55%]
+tests/graph/test_graph.py::test_misrouted_parcel_is_flagged PASSED       [ 60%]
+tests/graph/test_graph.py::test_new_run_resets_live_state_and_keeps_history PASSED [ 65%]
+tests/graph/test_graph.py::test_explicit_start_new_run PASSED            [ 70%]
+tests/graph/test_graph.py::test_simulator_status PASSED                  [ 75%]
+tests/graph/test_graph.py::test_telemetry_events_stored_with_data_json PASSED [ 80%]
+tests/graph/test_graph.py::test_alert_lifecycle PASSED                   [ 85%]
+tests/graph/test_graph.py::test_alert_on_bay_and_parcel PASSED           [ 90%]
+tests/graph/test_graph.py::test_write_metrics_reflected_in_twin PASSED   [ 95%]
+tests/graph/test_graph.py::test_get_graph_contract PASSED                [100%]
+
+============================== 20 passed in 8.79s ==============================

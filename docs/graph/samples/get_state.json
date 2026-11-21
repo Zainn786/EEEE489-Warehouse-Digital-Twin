@@ -1,0 +1,100 @@
+{
+  "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+  "active_run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+  "simulator_status": "running",
+  "warehouse": {
+    "warehouse_id": "WH_01",
+    "name": "Group 6 Fulfillment Sorting Area",
+    "status": "operational",
+    "run_started_at": "2026-11-20T10:00:00Z"
+  },
+  "conveyor": {
+    "conveyor_id": "CONVEYOR_01",
+    "speed_mps": 0.0,
+    "running": true,
+    "jammed": true,
+    "status": "jammed",
+    "jammed_since": "2026-11-20T10:00:09Z",
+    "stopped_since": "2026-11-20T10:00:09Z",
+    "last_updated": "2026-11-20T10:00:09Z"
+  },
+  "scanner": {
+    "scanner_id": "SCANNER_01",
+    "status": "operational",
+    "successful_scans": 2,
+    "failed_scans": 1
+  },
+  "sorter": {
+    "sorter_id": "SORTER_01",
+    "status": "operational",
+    "active_route": "REJECT_LANE"
+  },
+  "bays": [
+    {
+      "bay_id": "A",
+      "capacity": 5,
+      "occupancy": 1,
+      "status": "available"
+    },
+    {
+      "bay_id": "B",
+      "capacity": 5,
+      "occupancy": 0,
+      "status": "available"
+    },
+    {
+      "bay_id": "C",
+      "capacity": 5,
+      "occupancy": 0,
+      "status": "available"
+    }
+  ],
+  "reject_lane": {
+    "lane_id": "REJECT_LANE_01",
+    "rejected_count": 1
+  },
+  "active_parcels": [
+    {
+      "parcel_id": "P003",
+      "target_bay": "B",
+      "actual_bay": null,
+      "status": "scanned",
+      "current_stage": "SCANNER",
+      "created_at": "2026-11-20T10:00:06Z",
+      "sorted_at": null,
+      "scan_ok": true,
+      "correctly_routed": null,
+      "rejected_at": null,
+      "completed_at": null,
+      "dispatched_at": null,
+      "reject_reason": null,
+      "updated_at": "2026-11-20T10:00:08Z"
+    },
+    {
+      "parcel_id": "P004",
+      "target_bay": "A",
+      "actual_bay": null,
+      "status": "created",
+      "current_stage": "ENTRY",
+      "created_at": "2026-11-20T10:00:09Z",
+      "sorted_at": null,
+      "scan_ok": null,
+      "correctly_routed": null,
+      "rejected_at": null,
+      "completed_at": null,
+      "dispatched_at": null,
+      "reject_reason": null,
+      "updated_at": "2026-11-20T10:00:09Z"
+    }
+  ],
+  "kpis": {
+    "bay_occupancy_A": 20.0,
+    "routing_accuracy": 100.0,
+    "calculated_at": "2026-11-20T10:00:12Z",
+    "bay_occupancy_C": 0.0,
+    "bay_occupancy_B": 0.0,
+    "rejection_rate": 50.0,
+    "throughput": 1,
+    "average_sorting_time": 6.0
+  }
+}

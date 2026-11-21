@@ -1,0 +1,194 @@
+[
+  {
+    "event_id": "9ffdf862-aca3-48f2-bcd1-111670cd404d",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "simulator_status",
+    "timestamp": "2026-11-20T10:00:00Z",
+    "source_id": "SIMULATOR",
+    "parcel_id": null,
+    "data": {
+      "status": "running"
+    }
+  },
+  {
+    "event_id": "c78e4b81-b290-42a7-9528-7beb1cf80e32",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "conveyor_status",
+    "timestamp": "2026-11-20T10:00:00Z",
+    "source_id": "CONVEYOR_01",
+    "parcel_id": null,
+    "data": {
+      "speed_mps": 0.5,
+      "running": true,
+      "jammed": false
+    }
+  },
+  {
+    "event_id": "57ffcc92-0d55-458c-a9ca-c783e61601b3",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_created",
+    "timestamp": "2026-11-20T10:00:00Z",
+    "source_id": "CONVEYOR_01",
+    "parcel_id": "P001",
+    "data": {
+      "target_bay": "A",
+      "status": "created",
+      "location": "ENTRY"
+    }
+  },
+  {
+    "event_id": "0d54ecfc-7a27-4ec5-af58-f882f2f2bafe",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_scanned",
+    "timestamp": "2026-11-20T10:00:02Z",
+    "source_id": "SCANNER_01",
+    "parcel_id": "P001",
+    "data": {
+      "target_bay": "A",
+      "scan_ok": true,
+      "status": "scanned"
+    }
+  },
+  {
+    "event_id": "cfbdad05-864e-46d3-bcb4-aed4d0950f4a",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_created",
+    "timestamp": "2026-11-20T10:00:03Z",
+    "source_id": "CONVEYOR_01",
+    "parcel_id": "P002",
+    "data": {
+      "target_bay": "C",
+      "status": "created",
+      "location": "ENTRY"
+    }
+  },
+  {
+    "event_id": "5d338e25-f17a-4a03-91ff-f3d41f26e744",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_at_sorter",
+    "timestamp": "2026-11-20T10:00:04Z",
+    "source_id": "SORTER_01",
+    "parcel_id": "P001",
+    "data": {
+      "target_bay": "A",
+      "status": "at_sorter"
+    }
+  },
+  {
+    "event_id": "d89ec7c9-1d29-4690-b7d3-a991d8a506fc",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_scanned",
+    "timestamp": "2026-11-20T10:00:05Z",
+    "source_id": "SCANNER_01",
+    "parcel_id": "P002",
+    "data": {
+      "target_bay": "C",
+      "scan_ok": false,
+      "status": "scanned"
+    }
+  },
+  {
+    "event_id": "910505ca-bcbc-4349-afea-a3f89d80f67c",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_sorted",
+    "timestamp": "2026-11-20T10:00:06Z",
+    "source_id": "SORTER_01",
+    "parcel_id": "P001",
+    "data": {
+      "target_bay": "A",
+      "actual_bay": "A",
+      "status": "sorted"
+    }
+  },
+  {
+    "event_id": "27ae3949-5b9c-4a35-a842-3a1587633863",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "bay_occupancy_changed",
+    "timestamp": "2026-11-20T10:00:06Z",
+    "source_id": "BAY_A",
+    "parcel_id": null,
+    "data": {
+      "bay_id": "A",
+      "occupancy": 1,
+      "capacity": 5
+    }
+  },
+  {
+    "event_id": "e0bb3491-9fde-4007-96ec-bc7b7fddb159",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_created",
+    "timestamp": "2026-11-20T10:00:06Z",
+    "source_id": "CONVEYOR_01",
+    "parcel_id": "P003",
+    "data": {
+      "target_bay": "B",
+      "status": "created",
+      "location": "ENTRY"
+    }
+  },
+  {
+    "event_id": "8dc1283f-1621-4973-a5fc-2728234481aa",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_at_sorter",
+    "timestamp": "2026-11-20T10:00:07Z",
+    "source_id": "SORTER_01",
+    "parcel_id": "P002",
+    "data": {
+      "target_bay": "C",
+      "status": "at_sorter"
+    }
+  },
+  {
+    "event_id": "9701c551-a158-42b0-b866-d67de5797295",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_rejected",
+    "timestamp": "2026-11-20T10:00:09Z",
+    "source_id": "SORTER_01",
+    "parcel_id": "P002",
+    "data": {
+      "target_bay": "C",
+      "actual_bay": null,
+      "reason": "scan_failed",
+      "status": "rejected"
+    }
+  },
+  {
+    "event_id": "8d5f14fa-275c-4372-85e0-6483ac27e200",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_scanned",
+    "timestamp": "2026-11-20T10:00:08Z",
+    "source_id": "SCANNER_01",
+    "parcel_id": "P003",
+    "data": {
+      "target_bay": "B",
+      "scan_ok": true,
+      "status": "scanned"
+    }
+  },
+  {
+    "event_id": "9f715eac-8af7-4bc2-ba5b-bf8ef39e0391",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "conveyor_status",
+    "timestamp": "2026-11-20T10:00:09Z",
+    "source_id": "CONVEYOR_01",
+    "parcel_id": null,
+    "data": {
+      "speed_mps": 0.0,
+      "running": true,
+      "jammed": true
+    }
+  },
+  {
+    "event_id": "ef8e3729-cc39-4929-99b5-bef64f20e501",
+    "run_id": "b6a54c23-e18d-45a1-a5bd-98e60c61f102",
+    "event_type": "parcel_created",
+    "timestamp": "2026-11-20T10:00:09Z",
+    "source_id": "CONVEYOR_01",
+    "parcel_id": "P004",
+    "data": {
+      "target_bay": "A",
+      "status": "created",
+      "location": "ENTRY"
+    }
+  }
+]
