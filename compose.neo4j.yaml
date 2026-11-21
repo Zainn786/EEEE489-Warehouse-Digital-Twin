@@ -1,0 +1,16 @@
+# OPTIONAL: use after Member 2's Neo4j branch is integrated.
+# Do not add if the team's base docker-compose.yml already defines neo4j.
+# Create a private .env with NEO4J_PASSWORD=your_local_password first.
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in your private .env file}"
+    ports:
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+    volumes:
+      - neo4j_data:/data
+    restart: unless-stopped
+volumes:
+  neo4j_data:

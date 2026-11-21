@@ -1,0 +1,14 @@
+# Overlay for your EXISTING docker-compose.yml: do not overwrite the team's file.
+# Launch: docker compose -f docker-compose.yml -f compose.simulator.yaml up --build -d simulator
+services:
+  simulator:
+    build:
+      context: .
+      dockerfile: simulator/Dockerfile
+    environment:
+      MQTT_HOST: mosquitto
+      MQTT_PORT: "1883"
+      SIMULATOR_AUTOSTART: "false"
+    depends_on:
+      - mosquitto
+    restart: unless-stopped
