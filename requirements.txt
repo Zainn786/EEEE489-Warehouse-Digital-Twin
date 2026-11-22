@@ -1,0 +1,6 @@
+streamlit>=1.37
+streamlit-autorefresh>=1.0.1
+requests>=2.31
+pandas>=2.0
+plotly>=5.18
+networkx>=3.0
